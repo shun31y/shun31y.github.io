@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curriculum Vitae — Shun Kato, Keio University." />
+  <title>CV — Shun Kato</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #202124;
+      background: #f6f7f8;
+      line-height: 1.55;
+    }
+    a { color: #1f5f99; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 52px 64px 60px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.07);
+    }
+    .header { border-bottom: 2px solid #222; padding-bottom: 18px; margin-bottom: 26px; }
+    .header-row { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; }
+    h1 { margin: 0; font-size: 2.35rem; letter-spacing: -0.035em; }
+    .jp-name { margin: 2px 0 10px; color: #777; }
+    .meta { color: #555; font-size: .94rem; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .button {
+      display: inline-block;
+      border: 1px solid #d5d8dc;
+      border-radius: 8px;
+      padding: 7px 11px;
+      color: #333;
+      background: #fff;
+      font-size: .88rem;
+      font-weight: 600;
+    }
+    .button:hover { text-decoration: none; background: #f7f7f7; }
+    section { margin: 28px 0; }
+    h2 {
+      font-size: 1.16rem;
+      text-transform: uppercase;
+      letter-spacing: .055em;
+      margin: 0 0 13px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #dfe2e5;
+    }
+    .entry { display: grid; grid-template-columns: 94px minmax(0, 1fr); gap: 16px; margin: 0 0 15px; }
+    .date { color: #6b7075; font-size: .9rem; font-variant-numeric: tabular-nums; }
+    .entry h3 { margin: 0 0 3px; font-size: 1rem; line-height: 1.38; }
+    .entry p { margin: 3px 0; }
+    .authors { color: #444; font-size: .93rem; }
+    .venue { color: #666; font-size: .91rem; font-style: italic; }
+    .detail { color: #50555a; font-size: .93rem; }
+    .tag { font-size: .78rem; font-weight: 700; color: #8c3b2f; text-transform: uppercase; letter-spacing: .035em; }
+    ul.compact { margin: 4px 0 0 18px; padding: 0; }
+    ul.compact li { margin: 3px 0; }
+    footer { margin-top: 38px; padding-top: 12px; border-top: 1px solid #eee; color: #999; font-size: .82rem; }
+    @media (max-width: 720px) {
+      body { background: #fff; }
+      .page { margin: 0; padding: 30px 22px 42px; box-shadow: none; }
+      .header-row { display: block; }
+      .actions { justify-content: flex-start; margin-top: 14px; }
+      .entry { grid-template-columns: 1fr; gap: 2px; margin-bottom: 19px; }
+      h1 { font-size: 2rem; }
+    }
+    @media print {
+      body { background: #fff; font-size: 10.5pt; }
+      .page { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+      .actions { display: none; }
+      a { color: #202124; text-decoration: none; }
+      section { break-inside: auto; margin: 18px 0; }
+      .entry { break-inside: avoid; margin-bottom: 10px; }
+      h2 { break-after: avoid; }
+      @page { size: A4; margin: 15mm 16mm; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="header-row">
+        <div>
+          <h1>Shun Kato</h1>
+          <div class="jp-name">加藤 駿</div>
+          <div class="meta">Keio University · Isogawa Lab · Kanagawa, Japan</div>
+          <div class="meta">
+            <a href="https://shun31y.github.io/">Homepage</a> ·
+            <a href="https://github.com/shun31y">GitHub</a>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="button" href="../">← Homepage</a>
+          <button class="button" type="button" onclick="window.print()">Print / Save as PDF</button>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Research Interests</h2>
+      <p>Human motion generation and understanding; multimodal large language models (MLLMs); long-form video understanding; human-centric computer vision.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="date">Apr 2025–Present</div>
+        <div>
+          <h3>Keio University, Graduate School of Science and Technology</h3>
+          <p class="detail">Master's student, Isogawa Lab.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications &amp; Preprints</h2>
+
+      <div class="entry">
+        <div class="date">2026</div>
+        <div>
+          <div class="tag">NeurIPS 2026 E&amp;D</div>
+          <h3>ELMA: Benchmarking Anaphoric Compositions for Long-Term Text-to-Motion Generation</h3>
+          <p class="authors"><strong>Shun Kato</strong>, Dixin Yang, Kotaro Amaya, Yuiga Wada, Kazumi Fukuda, Takashi Shibuya, Yuki Mitsufuji, Mariko Isogawa</p>
+          <p class="venue">Neural Information Processing Systems (NeurIPS), Evaluations &amp; Datasets Track, 2026.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="date">2026</div>
+        <div>
+          <div class="tag">Preprint</div>
+          <h3>Image-based Joint-level Detection for Inflammation in Rheumatoid Arthritis from Small and Imbalanced Data</h3>
+          <p class="authors"><strong>Shun Kato</strong>, Yasushi Kondo, Shuntaro Saito, Yoshimitsu Aoki, Mariko Isogawa</p>
+          <p class="venue">arXiv:2602.14365, 2026.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="date">2026</div>
+        <div>
+          <div class="tag">RHEUM-AI @ MICCAI 2026</div>
+          <h3>RASH: Rheumatoid Arthritis Synthetic Hand Dataset for Joint-Level Inflammation Estimation</h3>
+          <p class="authors">Rintaro Chiba, <strong>Shun Kato</strong>, Daiki Kitsunai, Yasushi Kondo, Yoshimitsu Aoki, Mariko Isogawa</p>
+          <p class="venue">RHEUM-AI Workshop, MICCAI 2026.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="date">2026</div>
+        <div>
+          <div class="tag">ACCAS 2026</div>
+          <h3>Virtual-to-Real Pairwise Progression Estimation of Rheumatoid Arthritis Joints from RGB Images</h3>
+          <p class="authors">Rintaro Chiba, <strong>Shun Kato</strong>, Daiki Kitsunai, Yasushi Kondo, Yoshimitsu Aoki, Mariko Isogawa</p>
+          <p class="venue">The 22nd Asian Conference on Computer Aided Surgery, 2026.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="date">2025</div>
+        <div>
+          <div class="tag">ACCAS 2025</div>
+          <h3>Image-based Joint Inflammation Estimation for Rheumatoid Arthritis with Virtual Hands</h3>
+          <p class="authors">Rintaro Chiba, <strong>Shun Kato</strong>, Daiki Kitsunai, Yasushi Kondo, Shuntaro Saito, Yoshimitsu Aoki, Mariko Isogawa</p>
+          <p class="venue">Asian Conference on Computer Aided Surgery, 2025.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research &amp; Industry Experience</h2>
+      <div class="entry">
+        <div class="date">May 2025–Sep 2026</div>
+        <div>
+          <h3>Turing — Foundation AI Team, Intern</h3>
+          <p class="detail">Research and development related to multimodal large language models and discrete diffusion models.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="date">Jul 2024–Sep 2024</div>
+        <div>
+          <h3>CyberAgent — ABEMA, Intern</h3>
+          <p class="detail">Research and development on LLMs and search systems for ABEMA.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="date">Sep 2023–Sep 2024</div>
+        <div>
+          <h3>ELYZA — Intern</h3>
+          <p class="detail">Research and development on a chatbot using hybrid retrieval-augmented generation (Hybrid RAG).</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Domestic Presentations</h2>
+      <div class="entry">
+        <div class="date">2026</div>
+        <div><h3>Benchmarking Cross Dependencies for Long-Term Text-to-Motion Generation</h3><p class="authors"><strong>Shun Kato</strong>, Dixin Yang, Kotaro Amaya, Yuiga Wada, Kazumi Fukuda, Takashi Shibuya, Yuki Mitsufuji, Mariko Isogawa</p><p class="venue">MIRU 2026.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2026</div>
+        <div><h3>Compositional Evaluation of Long-Form Text-Conditioned Motion Generation</h3><p class="authors">Dixin Yang, <strong>Shun Kato</strong>, Kotaro Amaya, Yuiga Wada, Kazumi Fukuda, Takashi Shibuya, Yuki Mitsufuji, Mariko Isogawa</p><p class="venue">MIRU 2026.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2026</div>
+        <div><h3>Rheumatoid Arthritis Hand Dataset for Joint-Level Inflammation Estimation</h3><p class="authors">Rintaro Chiba, <strong>Shun Kato</strong>, Daiki Kitsunai, Yasushi Kondo, Yoshimitsu Aoki, Mariko Isogawa</p><p class="venue">MIRU 2026.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2026</div>
+        <div><h3>合成手画像データセットを用いた関節リウマチに起因する関節炎症推定手法</h3><p class="authors">千葉倫太郎, <strong>加藤駿</strong>, 橘内大輝, 近藤泰, 青木義満, 五十川麻理子</p><p class="venue">JAMIT 2026.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2025</div>
+        <div><h3>Image-based Joint-level Detection for Inflammation in Rheumatoid Arthritis from Small and Imbalanced Data</h3><p class="authors"><strong>Shun Kato</strong>, Yasushi Kondo, Shuntaro Saito, Yoshimitsu Aoki, Mariko Isogawa</p><p class="venue">MIRU 2025, IS1-189.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2025</div>
+        <div><h3>時系列的整合性を考慮したテキスト指示による長系列な人物動作生成</h3><p class="authors">Kotaro Amaya, <strong>Shun Kato</strong>, Takashi Shibuya, Julian Tanke, Kazumi Fukuda, Yuki Mitsufuji, Mariko Isogawa</p><p class="venue">MIRU 2025.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2025</div>
+        <div><h3>仮想合成手指画像を用いた関節リウマチに起因する関節炎症推定手法</h3><p class="authors">Rintaro Chiba, <strong>Shun Kato</strong>, Daiki Kitsunai, Yasushi Kondo, Shuntaro Saito, Yoshimitsu Aoki, Mariko Isogawa</p><p class="venue">MIRU 2025, IS3-189. Interactive Presentation Award.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2024</div>
+        <div><h3>ABEMA検索におけるLLMを用いた0件ヒット問題に対する実験と評価</h3><p class="authors"><strong>Shun Kato</strong>, Shintaro Inuzuka, Shuhei Nakano</p><p class="venue">The 19th YANS Symposium, S2-P26. Encouragement Award.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Awards &amp; Activities</h2>
+      <div class="entry">
+        <div class="date">2025</div>
+        <div><h3>MIRU Interactive Presentation Award</h3><p class="detail">Awarded for the presentation on rheumatoid arthritis inflammation estimation using synthetic hand images.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2024</div>
+        <div><h3>YANS Encouragement Award</h3><p class="detail">The 19th YANS Symposium.</p></div>
+      </div>
+      <div class="entry">
+        <div class="date">2024</div>
+        <div><h3>Azure OpenAI Service Hackathon for University Students — Finalist</h3><p class="detail">Team Penguins; advanced to the final round as one of three Japanese teams.</p></div>
+      </div>
+    </section>
+
+    <footer>Last updated September 2026 · Shun Kato</footer>
+  </main>
+</body>
+</html>
