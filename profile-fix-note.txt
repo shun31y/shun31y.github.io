@@ -1,1 +1,0 @@
-The valid profile image is staged as base64 for repair.
