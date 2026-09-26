@@ -76,21 +76,19 @@ h3 { font-size: 1.05rem; margin: 3px 0 7px; line-height: 1.45; }
 .pub-links { margin-top: 8px; display: flex; gap: 14px; }
 .pub-links a { font-weight: 600; font-size: 0.92rem; }
 .timeline-item {
-  position: relative;
+  display: block;
   margin-bottom: 24px;
   padding: 18px 20px;
   border: 1px solid #ececec;
   border-radius: 12px;
   background: #fff;
 }
-.timeline-item::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .timeline-date {
-  float: right;
-  margin: 0 0 8px 18px;
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 0 9px;
   padding: 4px 10px;
   border-radius: 999px;
   background: #f5f6f8;
@@ -99,12 +97,11 @@ h3 { font-size: 1.05rem; margin: 3px 0 7px; line-height: 1.45; }
   font-weight: 600;
   line-height: 1.35;
   white-space: nowrap;
-  text-align: center;
   font-variant-numeric: tabular-nums;
 }
+.timeline-date br { display: none; }
 .timeline-item h3 {
-  margin-top: 0;
-  padding-top: 1px;
+  margin: 0 0 7px;
 }
 .timeline-item p { margin: 6px 0 0; color: #555; }
 footer { margin-top: 64px; color: #999; font-size: 0.88rem; }
@@ -123,9 +120,5 @@ footer { margin-top: 64px; color: #999; font-size: 0.88rem; }
   .profile-card { grid-template-columns: 88px 1fr; }
   .avatar { width: 84px; height: 84px; }
   .timeline-item { padding: 16px; }
-  .timeline-date {
-    float: none;
-    display: inline-block;
-    margin: 0 0 10px;
-  }
+  .timeline-date { font-size: 0.78rem; }
 }
