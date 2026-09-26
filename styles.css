@@ -69,7 +69,29 @@ h3 { font-size: 1.05rem; margin: 3px 0 7px; line-height: 1.45; }
   margin-bottom: 28px;
 }
 .pub-year { color: #888; font-weight: 600; }
-.pub-venue { color: #8c3b2f; font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.pub-venue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: #8c3b2f;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pub-award {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f5f1e8;
+  color: #7a5a18;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  white-space: nowrap;
+}
 .authors, .venue-full { margin: 5px 0; }
 .authors { color: #444; }
 .venue-full { color: #666; font-size: 0.95rem; }
